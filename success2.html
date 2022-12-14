@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request Page</title>
+    <title>Create Request</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="outsource-page">
+    <div class="modal-container">
         <nav>
             <div class="nav-info">
                 <img src="./images/logo.png" alt="" class="nav-logo">
@@ -59,48 +59,19 @@
                 </li>
             </ul>
         </nav>
-        <section class="outsource">
-            <div class="outsource-top">
-                <div class="arrow-left">
-                    <img src="./images/ArrowLeft.png" alt="">
+        <section class="modal-section">
+            <div class="flex">
+                <div class="modal">
+                    <img src="./images/check.png" alt="" srcset="">
+                    <h3 class="successful">Request Successful</h3>
+                    <p>
+                        You have successfully created a request with ProDevs. Our team will validate this request before approval
+                    </p>
+                    <button class="proceed success-proceed">Proceed</button>
                 </div>
-                <h3>My Request</h3>
-            </div>
-            <main>
-                <h4 class="outsource-head">
-                    What kind of request would you like to create  ?
-                </h4>
-                <div class="create-flex">
-                    <div class="outsource-flex create-flexitem">
-                        <div class="radio">
-                            <p>Outsourcing</p>
-                            <div class="option-circle "></div>
-                        </div>
-                        <img src="./images/outsource.png" alt="" srcset="" class="outsource-img">
-                        <p class="outsource-text">
-                            Are you looking to hire a staff however you want flexibility of payment,
-                             you want the ProDevs team to handle Payroll, management staff and other HR 
-                             functions while you deal with ProDevs Directly but the talent works for you.
-                        </p>
-                    </div>
-                    <div class="selected create-flexitem">
-                        <div class="radio">
-                            <p for="">Recruitment</p>
-                            <div class="selected-circle"></div>
-                        </div>
-                        <img src="./images/recruit.png" alt="" srcset="" class="outsource-img">
-                        <p class="outsource-text">
-                            Are you looking for a full-time,Part-time or Contract staff and you want to
-                             manage payroll with the talent directly with all other HR functions asides sourcing
-                        </p>
-                    </div>
+                <div class="clear">
+                    <div class="times"></div>
                 </div>
-                <p class="text-outsource">If you are unsure of what to do, please <a href="#"> schedule a call </a>
-                    with a ProDevs representative 
-                </p>
-            </main>
-            <div class="btn">
-                <a class="out-req" href="#">Proceed To Form</a>
             </div>
         </section>
     </div>
