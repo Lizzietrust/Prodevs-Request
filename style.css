@@ -322,6 +322,18 @@ ul.table-head li {
     border-radius: 0.1875rem;
 }
 
+.date-input input::placeholder {
+    color: #616E7C;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input[type="date"]::placeholder {
+    color: #616E7C; 
+}
+
 .terms-input {
     display: flex;
     align-items: center;
@@ -458,32 +470,35 @@ button.success-proceed {
 
 .outsource {
     width: 55rem;
-    margin: 6rem auto 2rem auto;
+    margin: 2rem auto ;
 }
 
 .outsource main {
     width: 100%;
-    border: 1px solid #9AA5B1;
     border-radius: 10px;
     padding: 1.5rem;
+}
+
+.outsource .request {
+    margin-bottom: .5rem;
 }
 
 .outsource-head {
     color: #1F2431E5;
     text-align: center;
-    margin-top: .5rem;
+    font-weight: 400;
 }
 
 .create-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 44rem;
-    margin: 2rem auto;
+    width: 40rem;
+    margin: 3rem auto;
 }
 
 .create-flexitem {
-    width: 45%;
+    width: 47%;
     height: 22rem;
     border: 1px solid #9AA5B1;
     display: flex;
@@ -509,6 +524,7 @@ button.success-proceed {
 .radio p {
     margin-right: 5rem;
     color: #1F2933;
+    font-size: 1rem;
 }
 
 .radio .option-circle {
@@ -553,19 +569,20 @@ p.text-outsource a {
 
 a.out-req {
     padding: 0.625rem 5rem;
-    margin: 3.5rem 0 1rem 0;
+    margin: 0 auto 1rem auto;
     background-color: #0552B5;
     color: #fff;
     border: none;
     border-radius: 5px;
+    font-size: .9rem;
 }
 
 .outsource-top {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 9rem;
-    left: 9rem;
+    top: 10rem;
+    left: 4rem;
 }
 
 .arrow-left {
@@ -695,8 +712,8 @@ img.guarantee {
 
 .welcome-card {
     background-image: linear-gradient( to right, #1D2F6F, #1E3070, #0098DA);
-    width: 30.2rem;
-    height: 15rem;
+    width: 30rem;
+    height: 14.5rem;
     border-radius: 0.63rem;
     display: flex;
     flex-direction: column;
@@ -722,7 +739,7 @@ img.guarantee {
     padding: 1rem 1.5rem;
     border-radius: .63rem;
     margin-left: 1.5rem;
-    width: 53.5rem;
+    width: 65rem;
 }
 
 .progress-card h3 {
@@ -739,7 +756,7 @@ img.guarantee {
 }
 
 .progress-flexitem {
-    width: 19%;
+    width: 18.5%;
 }
 
 .number-line {
@@ -761,11 +778,19 @@ img.guarantee {
     margin-bottom: .5rem;
 }
 
+.number-one {
+    background-color: #1E306F;
+}
+
 .line {
     background-color: #D1DFE5;
-    height: .1rem;
+    height: .2rem;
     width: 6.875rem;
     margin-left: .3rem;
+}
+
+.line-one {
+    background-color: #1E306F;
 }
 
 .progress-flexitem p {
@@ -783,7 +808,7 @@ img.guarantee {
 .noactive-box {
     background-color: #fff;
     margin: 0 3rem 2rem 3rem;
-    box-shadow:  3px 3px 3px 4px rgba(31, 36, 49, 0.05);
+    box-shadow: 0px 0px 64px 0px #1F24310D;
     border-radius: .32rem;
     padding: 2rem 3rem 0 2rem;
 }
@@ -816,11 +841,11 @@ img.guarantee {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 25rem;
+    height: 28rem;
 }
 
 .progress-table {
-    height: 25rem;
+    height: 28rem;
 }
 
 .notify-image {
@@ -845,7 +870,7 @@ img.guarantee {
     font-weight: 400;
     text-align: center;
     width: 18rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .noactive-center a {
@@ -862,7 +887,7 @@ img.guarantee {
     color: #01337D;
     font-size: 0.875rem;
     border: 1px solid #01337D;
-    border-radius: .32rem;
+    border-radius: .3rem;
     padding: .5rem 1.7rem;
 }
 
@@ -882,13 +907,15 @@ img.guarantee {
 
 .noactive-box table td {
     color: #616E7C;
+    padding-top: .5rem;
 }
 
-.noactive-box table td.pending {
+.noactive-box table td .pending {
     color: #fff;
     background-color: #D64545;
     border-radius: .4rem;
     font-size: .9rem;
+    padding: .5rem 0;
 }
 
 .head-link {
