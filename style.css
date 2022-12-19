@@ -413,7 +413,7 @@ h3.successful {
     font-size: 0.9375rem;
 }
 
-button.proceed {
+a.proceed {
     padding: 0.625rem 5.625rem;
     color: #0967D2;
     border: 1px solid #47A3F3;
