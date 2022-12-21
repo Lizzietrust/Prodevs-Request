@@ -325,15 +325,29 @@ ul.table-head li {
     outline: none;
     padding: 0.9375rem;
     border-radius: 0.1875rem;
+    position: relative;
+    color: #616E7C;
+    font-size: 0.9rem;
 }
 
-.date-input input::placeholder {
+#date-type::placeholder {
     color: #616E7C;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0;
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    /*display: none;*/
 }
+
 
 input[type="date"]::placeholder {
     color: #616E7C; 
@@ -939,4 +953,9 @@ td.action-images img {
     align-items: center;
     justify-content: space-between;
 }
+
+
    
+
+
+
