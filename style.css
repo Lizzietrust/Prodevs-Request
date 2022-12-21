@@ -189,7 +189,7 @@ a.req {
 .arrow {
     position: absolute;
     top: -1.1rem;
-    left: -7rem;
+    left: -6rem;
     border: 1px solid #DADADA;
     width: 3rem;
     height: 3rem;
@@ -208,7 +208,7 @@ p.get {
 }
 
 section.form {
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -273,6 +273,11 @@ ul.table-head li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.options .option {
+    width: 48%;
 }
 
 .options label {
@@ -281,7 +286,7 @@ ul.table-head li {
 }
 
 .options select {
-    width: 29.375rem;
+    width: 100%;
     border: 1px solid #616E7C;
     outline: none;
     padding: 0.9375rem;
@@ -315,7 +320,7 @@ ul.table-head li {
 }
 
 .date-input input {
-    width: 29.375rem;
+    width: 100%;
     border: 1px solid #616E7C;
     outline: none;
     padding: 0.9375rem;
@@ -506,6 +511,7 @@ button.success-proceed {
     align-items: center;
     padding: 2.5rem 1rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .selected {
@@ -617,7 +623,7 @@ button.rec-req {
 
 section.aboutus {
     background-color: #fff;
-    width: 70rem;
+    width: 90%;
     margin: 6rem auto;
     border-radius: 10px;
     padding: 2.5rem;
@@ -627,7 +633,7 @@ section.aboutus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem 0 2rem 0;
+    margin: 3rem 0 2rem 0;
     width: 100%;
 }
 
@@ -639,7 +645,7 @@ section.aboutus {
 }
 
 .about-flexitem img {
-    width: 10rem;
+    width: 14rem;
     padding-bottom: 1rem;
 }
 
@@ -697,23 +703,25 @@ img.guarantee {
     margin: 2rem 3rem 1.5rem;
 }
 
-.welcome-progress h3 {
+.welcome-progress h3.my-requesthead {
     color: #1F2933;
     font-weight: 400;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    padding-left: 1.3rem;
 }
 
 .welprogress-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .welcome-card {
     background-image: linear-gradient( to right, #1D2F6F, #1E3070, #0098DA);
-    width: 30rem;
-    height: 14.5rem;
+    width: 33.5%;
+    height: 15.5rem;
     border-radius: 0.63rem;
     display: flex;
     flex-direction: column;
@@ -738,8 +746,7 @@ img.guarantee {
     background-color: #F8FBFC;
     padding: 1rem 1.5rem;
     border-radius: .63rem;
-    margin-left: 1.5rem;
-    width: 65rem;
+    width: 65%;
 }
 
 .progress-card h3 {
@@ -756,7 +763,7 @@ img.guarantee {
 }
 
 .progress-flexitem {
-    width: 18.5%;
+    width: 18.7%;
 }
 
 .number-line {
@@ -802,7 +809,8 @@ img.guarantee {
 
 .progress-flexitem span {
     color: #97A6C6;
-    font-size: 0.75rem;
+    font-size: .75rem;
+    font-weight: 400;
 }
 
 .noactive-box {
@@ -811,6 +819,7 @@ img.guarantee {
     box-shadow: 0px 0px 64px 0px #1F24310D;
     border-radius: .32rem;
     padding: 2rem 3rem 0 2rem;
+    width: 93%;
 }
 
 .title {
@@ -823,6 +832,7 @@ img.guarantee {
     font-weight: 400;
     font-size: .9rem;
     padding-bottom: .5rem;
+    cursor: pointer;
 }
 
 .title-active {
@@ -908,14 +918,20 @@ img.guarantee {
 .noactive-box table td {
     color: #616E7C;
     padding-top: .5rem;
+    font-weight: 400;
 }
 
 .noactive-box table td .pending {
     color: #fff;
     background-color: #D64545;
     border-radius: .4rem;
-    font-size: .9rem;
+    font-size: .75rem;
     padding: .5rem 0;
+    font-weight: 400;
+}
+
+td.action-images img {
+    cursor: pointer;
 }
 
 .head-link {

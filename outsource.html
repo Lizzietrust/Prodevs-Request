@@ -34,7 +34,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://lizzietrust.github.io/Prodevs-Request/about-request" class="my-request">
+                    <a href="https://lizzietrust.github.io/Prodevs-Request/process" class="my-request">
                         <img src="./images/calendar-check.png" alt="" class="navlist-img" >
                         <p class="nav-text">My Request</p>
                     </a>
@@ -71,7 +71,7 @@
                     What kind of request would you like to create  ?
                 </h4>
                 <div class="create-flex">
-                    <div class="selected create-flexitem">
+                    <div class="create-flexitem outsource-item">
                         <div class="radio">
                             <p>Outsourcing</p>
                         </div>
@@ -82,7 +82,7 @@
                              functions while you deal with ProDevs Directly but the talent works for you.
                         </p>
                     </div>
-                    <div class="reqruit-flex create-flexitem">
+                    <div class="create-flexitem reqruit-item">
                         <div class="radio">
                             <p for="">Recruitment</p>
                         </div>
@@ -98,9 +98,29 @@
                 </p>
             </main>
             <div class="btn">
-                <a href="https://lizzietrust.github.io/Prodevs-Request/create" class="out-req">Proceed To Form</a>
+                <a href="https://lizzietrust.github.io/Prodevs-Request/create-outsource" class="out-req">Proceed To Form</a>
             </div>
         </section>
     </div>
+    <script>
+        const outsourceItem = document.querySelector(".outsource-item");
+        const reqruitItem = document.querySelector(".reqruit-item");
+        const linkForm = document.querySelector(".out-req");
+        outsourceItem.addEventListener("click", selectOutsource);
+        function selectOutsource() {
+            outsourceItem.style.border = "2px solid #01337D";
+            reqruitItem.style.border = "1px solid #9AA5B1";
+            linkForm.getAttribute("href");
+            linkForm.setAttribute("href", "https://lizzietrust.github.io/Prodevs-Request/create-outsource")
+        }
+
+        reqruitItem.addEventListener("click", selectReqruit);
+        function selectReqruit() {
+            reqruitItem.style.border = "2px solid #01337D";
+            outsourceItem.style.border = "1px solid #9AA5B1";
+            linkForm.getAttribute("href");
+            linkForm.setAttribute("href", "https://lizzietrust.github.io/Prodevs-Request/about-request")
+        }
+    </script>
 </body>
 </html>
